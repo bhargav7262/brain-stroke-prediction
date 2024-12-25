@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Symptoms</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h1>{{ prediction }}</h1>
+
+    <!-- Symptom selection via checklist -->
+    <form action="/classify_stroke" method="POST">
+        <label for="symptoms">Select Symptoms (You can choose multiple symptoms):</label><br>
+        <input type="checkbox" name="symptoms" value="weakness"> Weakness<br>
+        <input type="checkbox" name="symptoms" value="numbness"> Numbness<br>
+        <input type="checkbox" name="symptoms" value="severe_headache"> Severe Headache<br>
+        <input type="checkbox" name="symptoms" value="difficulty_speaking"> Difficulty Speaking<br>
+        <input type="checkbox" name="symptoms" value="sudden confusion"> sudden confusion<br>
+        <input type="checkbox" name="symptoms" value="toungue motion"> toungue motion<br>
+        <input type="checkbox" name="symptoms" value="nausea or vomiting"> nausea or vomit<br>
+        <input type="checkbox" name="symptoms" value="unable walking"> walking difficulty<br>
+        <input type="checkbox" name="symptoms" value="difficulty in eyes"> eye vision<br>
+        <input type="checkbox" name="symptoms" value="unable to understand speech">speech recognition<br>
+        <input type="checkbox" name="symptoms" value="double vision"> double vision<br>
+        <input type="checkbox" name="symptoms" value="difficult swallowing">swallowing<br>
+        <input type="checkbox" name="symptoms" value="ataxia">ataxia<br>
+        <input type="checkbox" name="symptoms" value="vertigo"> vertigo<br>
+        <input type="checkbox" name="symptoms" value="troubling speech">troubling speech<br>
+        
+
+        <button type="submit">Submit Symptoms</button>
+    </form>
+</body>
+</html>
